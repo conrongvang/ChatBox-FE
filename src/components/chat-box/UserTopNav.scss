@@ -1,0 +1,29 @@
+#user-topnav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(110, 102, 102);
+    display: flex;
+    > p {
+        font-size: 1.5vw;
+        right: 0;
+        position: absolute;
+        align-self: center;
+    }  
+    > i {
+        align-self: center;
+        padding-left: 10px;
+    }
+    .fa.fa-address-book {
+        font-size: xxx-large;
+    }
+    > i:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {  /* For tablet and desktop */
+    .fa.fa-address-book {
+        display: none;
+    }
+}

@@ -1,0 +1,46 @@
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 25% 5%;
+    display: block;
+    width: 80%;
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    button {
+        width: 100%;
+        background-color: rgb(2, 204, 255);
+        border-color:  rgb(2, 204, 255);
+        border-radius: 3vw;
+        padding: 1%;
+        font-size: large;
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(5, 112, 112);
+        }
+    }
+    * {
+        margin-top: 15px;
+    }
+    label {
+        float: left;
+        width: 25%;
+    }
+    input {
+        float: left;
+        width: 75%;
+    }
+    div {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) and (orientation: landscape) {  /* For tablet and desktop */
+    .form {
+        top: 33%;
+        left: 33%;
+        padding: 3vw;
+        width: 30%;
+    }
+}
+

@@ -1,0 +1,17 @@
+.list-friend {
+    overflow: auto;
+    background-color: rgb(110, 102, 102);
+    margin: auto;
+    > form {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        > input {
+            float: left;
+        }
+        > button {
+            float: right;
+            width: auto;
+        }
+    }
+}

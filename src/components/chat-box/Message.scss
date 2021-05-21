@@ -1,0 +1,25 @@
+.message {
+  div {
+    padding: 0.5vw 1vw;
+    border-radius: 30px;
+  }
+  &.left {
+    margin: 0 0 5px 0;
+    div {
+      background-color: rgb(116, 113, 116);
+      &:hover {
+        background-color: rgb(53, 52, 53);
+      }
+    }
+  }
+  &.right {
+    margin: 0 0 5px auto;
+    justify-content: flex-end;
+    & div {
+      background-color: rgb(3, 121, 218);
+      &:hover {
+        background-color: rgb(6, 78, 136);
+      }
+    }
+  }
+}

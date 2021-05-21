@@ -1,0 +1,12 @@
+#messages {
+    width: 100%;
+    margin: 0;
+    padding: 1vw;
+    overflow-y: auto;
+    > li {
+        word-break: break-word;
+        display: flex;
+        max-width: 70%;
+        text-align: justify;
+      }
+}

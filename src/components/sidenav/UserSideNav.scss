@@ -1,0 +1,12 @@
+.user-sidenav {
+    &.personal {
+        position: sticky;
+        top: 0;
+        display: flex;
+        height: 10%;
+        border-right: solid 2px white;
+    }
+    &.list-friend {
+        height: 90%;
+    }
+}

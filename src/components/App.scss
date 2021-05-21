@@ -1,0 +1,30 @@
+.body {
+  margin: 0;
+  padding-bottom: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.App {
+  display: grid;
+  grid-template-columns: 0 100%;
+  .user-sidenav {
+    grid-template-rows: 10% 90%;
+  }
+  .chat-box {
+    display: grid;
+    grid-template-rows: 10% 85% 5%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (orientation: landscape) {  /* For tablet and desktop */
+  .App {
+    grid-template-columns: 0.3fr 1fr;
+    overflow: hidden;
+    .user-sidenav {
+      min-width: 10%;
+      resize: horizontal;
+    }
+    .chat-box {
+      width: 100%;
+    }
+  }
+}
